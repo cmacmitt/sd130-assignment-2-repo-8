@@ -1,0 +1,38 @@
+    1  git clone https://github.com/Dhruval2902/sd130-assignment-2-repo-8.git
+    2  cd ~/Desktop/Assignment2/sd130-assignment-2-repo-8
+    3  git branch "issue-2"
+    4  git checkout issue-2
+    5  ls
+    6  cd ~/Desktop/Assignment2/sd130-assignment-2-repo-8/src/scripts
+    7  ls
+    8  code main.js
+    9  cd ~/Desktop/Assignment2/sd130-assignment-2-repo-8/src
+   10  ls
+   11  code .
+   12  cd ~/Desktop/Assignment2/sd130-assignment-2-repo-8
+   13  code .
+   14  code .
+   15  code .
+   16  history   
+   17  npm install --save-dev gulp-minify
+   18  npm install gulp
+   19  git log
+   20  run gulp
+   21  gulp
+   22  npm install -g
+   23  npm install -g gulp
+   24  gulp
+   25  gulp
+   26  gulp clean
+   27  gulp cleanTask
+   28  run gulp
+   29  gulp
+   30  gulp
+   31  history
+   32  git add .
+   33  git commit -m "issues corrected"
+   34  git checkout main
+   35  git merge "issue-2"
+   36  git push
+   37  history >> Dhruval-history.txt
+
