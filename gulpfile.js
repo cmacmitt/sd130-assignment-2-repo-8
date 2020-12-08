@@ -1,14 +1,12 @@
-const {src, dest, series, parallel} = require('gulp');
+const { src, dest, series, parallel } = require('gulp');
 const del = require('del');
-const imagemin = require('gulp-imagemin');
+
+const minify = require('gulp-minify');
+
 
 // This task is supposed to clean things
 
-const concat = require('gulp-concat');
-
-// This task is supposed to clean thin
-
-function cleaask() {
+function cleanTask() {
   return del('dist');
 }
 
@@ -17,7 +15,10 @@ function pagesTask() {
 }
 
 function scriptsTask() {
-  return src('src/scripts/**/*.js').pipe(dest('dist/js'));
+
+  return src('src/scripts/**/*.js')
+    .pipe(minify())
+    .pipe(dest('dist/js'));
 }
 
 function stylesTask() {
