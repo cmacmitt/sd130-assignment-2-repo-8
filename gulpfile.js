@@ -4,7 +4,11 @@ const imagemin = require('gulp-imagemin');
 
 // This task is supposed to clean things
 
-function cleanTask() {
+const concat = require('gulp-concat');
+
+// This task is supposed to clean thin
+
+function cleaask() {
   return del('dist');
 }
 
@@ -17,7 +21,9 @@ function scriptsTask() {
 }
 
 function stylesTask() {
-  return src('src/styles/**/*.css').pipe(dest('dist/css'));
+  return src(['src/styles/styles.css', 'src/styles/colors.css'])
+    .pipe(concat('styles.css'))
+    .pipe(dest('dist/css'))
 }
 
 function imagesTask() {
@@ -25,3 +31,4 @@ function imagesTask() {
 }
 
 exports.default = series(cleanTask, parallel(pagesTask, imagesTask, scriptsTask, stylesTask));
+
