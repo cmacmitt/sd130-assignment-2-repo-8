@@ -1,0 +1,17 @@
+
+  501  cd
+  502  cd desktop
+  503  git clone https://github.com/Chows23/sd130-assignment-2-repo-8.git
+  504  cd sd130-assignment-2-repo-8
+  505  git branch
+  506  git branch issue-1
+  507  git checkout issue-1
+  508  code .
+  509  git status
+  510  git add .
+  511  git commit -m "add new css file to modify and concate the css files."
+  512  git checkout main
+  513  git merge issue-1
+  514  git push
+  515  history
+  516  history >> chows-history.txt
